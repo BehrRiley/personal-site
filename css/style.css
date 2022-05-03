@@ -1,0 +1,263 @@
+/* base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color:#36393f;
+}
+
+#parabackground {
+  height: 100%;
+  background-image:
+    url(../images/stars.png),
+
+    url(../images/space_nebulae_2.png),
+    url(../images/space_nebulae_1.png),
+
+    url(../images/space_dust_02.png),
+    url(../images/space_dust_01.png);
+      /*linear-gradient(to bottom, rgba(107, 129, 255, 0.052), rgba(178, 255, 36, 0.093)),*/
+
+  background-repeat: repeat-x;
+  animation: 50s para infinite linear;
+}
+
+#background-container{
+  height: 900px;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+  background: linear-gradient(to bottom, rgba(107, 129, 255, 0.052), rgba(178, 255, 36, 0.093));
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333333e6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar a:hover {
+  background: repeating-linear-gradient(to right, #49428F3d, #8F42893d, #898F423d, #428F483d);
+  background-size: 800% 100%;
+  background-repeat: repeat-x;
+  animation: background-color-rotate 25s infinite 0s linear;
+}
+
+/* gradients generated with https://colorgradient.dev/ */
+.navbar .dropdown:hover .dropbtn {
+  background-size: 800% 400%;
+  background-position: 0px 0px,0px 0px,0px 0px,0px 0px;
+  background-image: radial-gradient(49% 81% at 45% 47%, #49428F 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #8F4289 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #898F42 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #428F48 1%, #FF000000 99%);
+  background-repeat: repeat-x;
+  animation: background-color-rotate 25s infinite 0s linear;
+}
+
+.navbar .dropdown:hover {
+  background-size: 800% 400%;
+  background-position: 0px 0px,0px 0px,0px 0px,0px 0px;
+  background-image: radial-gradient(49% 81% at 45% 47%, #49428F 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #8F4289 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #898F42 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #428F48 1%, #FF000000 99%);
+  background-repeat: repeat-x;
+  animation: background-color-rotate 25s infinite 0s linear;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f93d;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  padding: 16px;
+  color: white;
+  animation: background-rotate 100s linear 0s infinite;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background: linear-gradient(to right, #49428F3d, #8F42893d, #898F423d, #428F483d);
+  background-size: 400% 100%;
+  background-repeat: repeat-x;
+  animation: background-color-rotate 25s infinite 0s linear;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  float: none;
+  color: #180c1cce;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  background-color: transparent;
+  border: 1rem solid transparent;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  background-color: #bbbbbbbb;
+  height: 300px;
+}
+
+/* menu items with links */
+.column a {
+  float: none;
+  color: #180c1cce;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding: 0px;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+.column h3 {
+  background-size: 400% 100%;
+  animation: border-color-rotate 25s infinite 0s linear;
+}
+
+.column_image {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  background-color: #bbbbbbbb;
+  text-align: left;
+  height: 300px;
+}
+
+.column_image h3 {
+  background-size: 400% 100%;
+  animation: border-color-rotate 25s infinite 0s linear;
+  width: 178px;
+}
+
+.column_image_active {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  background-color: #bbbbbbbb;
+  text-align: left;
+  height: 300px;
+}
+.column_image_active h3 {
+  background-size: 400% 100%;
+  animation: border-color-rotate 25s infinite 0s linear;
+  width: 178px;
+}
+.menu_preview_image img {
+  float: right;
+  height: 125px;
+  width: 125px;
+  padding: 30px 0 0 0;
+  margin: 0 0 0 15px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@keyframes para {
+  100% {
+    background-position: 
+      100% 0,  /* nebulae    */
+      100% 0,
+      100% 0,  /* space dust */
+      100% 0,
+      100% 0;  /* stars      */
+  }
+}
+
+@keyframes background-color-rotate {
+  0%,100% {
+      background-position: 0 0;
+  }
+  50% {
+      background-position: 100% 0;
+  }
+}
+
+@keyframes border-color-rotate {
+  0%,100% {
+    border-bottom: 3px solid #49428F;
+  }
+
+  50% {
+    border-bottom: 3px solid #428F48;
+  }
+}
+
+/* Responsive layout configurations */
+@media screen and (max-width: 1800px) {
+  .column {
+    width: 25%;
+    height: 350px;
+  }
+  .column_image {
+    width: 25%;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .column {
+    width: 50%;
+    height: 300px;
+  }
+  .column_image {
+    width: 50%;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+  .column_image {
+    width: 100%;
+    height: auto;
+  }
+}

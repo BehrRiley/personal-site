@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+  <head>
+    <!-- metadata         -->
+    <title>Bear's Site</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <!-- css              -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  </head>
+  <body>
+    <div id="background-container">
+      <div id="parabackground"></div>
+    </div>
+
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#news">Blogs</a>
+      <div class="dropdown">
+        <button class="dropbtn">Portfolio 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <div class="header">
+            <h2>My Portfolio | Compilation of recent projects</h2>
+          </div>   
+          <div class="row">
+            <div class="column">
+              <!--<div class="tab">-->
+              <div class="tab">
+                <h3>Minecraft | Pinned</h3>
+                <a href="#"><button class="tablinks" onmouseover="openTab(event, 'link_1_1')">Link 1 Link 1 Link 1 Link 1</button></a>
+                <a href="#"><button class="tablinks active" onmouseover="openTab(event, 'link_1_2')">Link 2 Link 2 Link 2 Link 2</button></a>
+                <a href="#"><button class="tablinks" onmouseover="openTab(event, 'link_1_3')">Link 3 Link 3 Link 3 Link 3</button></a>
+                <a href="#"><button class="tablinks" onmouseover="openTab(event, 'link_1_4')">Link 4 Link 4 Link 4 Link 4</button></a>
+              </div>
+              <!--</div>-->
+            </div>
+            <div class="column">
+              <div class="tab">
+                <h3>Discord | Pinned</h3>
+                <a href="#"><button class="tablinks" onmouseover="openTab(event, 'link_2_1')">Link 1 Link 1 Link 1 Link 1</button></a>
+                <a href="#"><button class="tablinks" onmouseover="openTab(event, 'link_2_2')">Link 2 Link 2 Link 2 Link 2</button></a>
+                <a href="#"><button class="tablinks" onmouseover="openTab(event, 'link_2_3')">Link 3 Link 3 Link 3 Link 3</button></a>
+              </div>
+            </div>
+            <div class="column">
+              <div class="tab">
+                <h3>Miscellaneous | Pinned</h3>
+                <a href="#"><button class="tablinks" onmouseover="openTab(event, 'link_3_1')">Link 1 Link 1 Link 1 Link 1</button></a>
+                <a href="#"><button class="tablinks" onmouseover="openTab(event, 'link_3_2')">Link 2 Link 2 Link 2 Link 2</button></a>
+              </div>
+            </div>
+            <div class="column_image">
+
+              <!-- start column 1 hover events -->
+              <div id="link_1_1" class="tabcontent" style="display: none">
+                <div class="menu_preview_image">
+                  <img src="images/200x200.png">
+                </div>
+                <h3> Reference 1_1 </h3>
+                text 1_1
+              </div>
+
+              <div id="link_1_2" class="tabcontent" style="display: none">
+                <div class="menu_preview_image">
+                  <img src="images/200x200.png">
+                </div>
+                <h3> Reference 1_2 </h3>
+                text 1_2
+              </div>
+
+              <div id="link_1_3" class="tabcontent" style="display: none">
+                <div class="menu_preview_image">
+                  <img src="images/200x200.png">
+                </div>
+                <h3> Reference 1_3 </h3>
+                text 1_3
+              </div>
+
+              <div id="link_1_4" class="tabcontent" style="display: none">
+                <div class="menu_preview_image">
+                  <img src="images/200x200.png">
+                </div>
+                <h3> Reference 1_4 </h3>
+                text 1_4
+              </div>
+              <!-- end   column 1 hover events -->
+
+              <!-- start column 2 hover events -->
+              <div id="link_2_1" class="tabcontent" style="display: none">
+                <div class="menu_preview_image">
+                  <img src="images/200x200.png">
+                </div>
+                <h3> Reference 2_1 </h3>
+                text 2_1 
+              </div>
+
+              <div id="link_2_2" class="tabcontent" style="display: none">
+                <div class="menu_preview_image">
+                  <img src="images/200x200.png">
+                </div>
+                <h3> Reference 2_2 </h3>
+                text 2_2
+              </div>
+
+              <div id="link_2_3" class="tabcontent" style="display: none">
+                <div class="menu_preview_image">
+                  <img src="images/200x200.png">
+                </div>
+                <h3> Reference 2_3 </h3>
+                text 2_3
+              </div>
+              <!-- end   column 2 hover events -->
+              
+              <!-- start column 3 hover events -->
+              <div id="link_3_1" class="tabcontent" style="display: none">
+                <div class="menu_preview_image">
+                  <img src="images/200x200.png">
+                </div>
+                <h3> Reference 3_1 </h3>
+                text 3_1 
+              </div>
+
+              <div id="link_3_2" class="tabcontent" style="display: none">
+                <div class="menu_preview_image">
+                  <img src="images/200x200.png">
+                </div>
+                <h3> Reference 3_2 </h3>
+                text 3_2
+              </div>
+              <!-- end   column 3 hover events -->
+            </div>
+            <!-- image colum inactive, set to active by hover events here -->            
+          </div>
+        </div>
+      </div> 
+    </div>
+    <!-- start navigation -->
+    <!-- end navigation   -->
+    <script>
+      function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+  </body>
+</html>
